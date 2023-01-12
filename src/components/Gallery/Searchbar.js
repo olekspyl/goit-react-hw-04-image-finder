@@ -23,12 +23,14 @@ class Searchbar extends Component {
     }
 
     reset = () => {
-this.setState({ filter: ' '});
+this.setState({ filter: ''});
     }
     
     
     render() {
-        
+      const { filter } = this.state;  
+
+
         return (
     <header className="searchbar">
   <form className="form"  onSubmit={this.handleSubmit}>
@@ -38,7 +40,8 @@ this.setState({ filter: ' '});
       autoComplete="off"
       autoFocus
         placeholder="Search images and photos"
-        onChange={this.handleChange}
+                onChange={this.handleChange}
+                value={filter}
                     />
     <button type="submit" className="button">
       <span className="button-label">Search</span>
