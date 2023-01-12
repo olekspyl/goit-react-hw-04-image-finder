@@ -1,18 +1,12 @@
 import React from "react";
+import css from "./Gallery.module.css"
 
-const ImageGalleryItem = ({pictures}) => {
+const ImageGalleryItem = ({picture}) => {
     return (
-    <>
-        {pictures.map((picture) => {
-            return (
-                 <li key={picture.id} className="gallery-item">
-                <img src={picture.webformatURL} alt={picture.largeImageURL} />
-            </li>
-            )
-        })}
-            </>
-    )
-                    
+        <li className={css.ImageGalleryItem}>
+            <img className={css.ImageGalleryItemImage} src={picture.webformatURL} alt={picture.tags} />
+        </li>)
+         
 }
 
 export default ImageGalleryItem;
