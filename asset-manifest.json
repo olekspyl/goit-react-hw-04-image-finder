@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/olekspyl-goit-react-hw-03-image-finder/static/css/main.c9a09330.css",
-    "main.js": "/olekspyl-goit-react-hw-03-image-finder/static/js/main.518b176a.js",
+    "main.js": "/olekspyl-goit-react-hw-03-image-finder/static/js/main.90708486.js",
     "index.html": "/olekspyl-goit-react-hw-03-image-finder/index.html",
     "main.c9a09330.css.map": "/olekspyl-goit-react-hw-03-image-finder/static/css/main.c9a09330.css.map",
-    "main.518b176a.js.map": "/olekspyl-goit-react-hw-03-image-finder/static/js/main.518b176a.js.map"
+    "main.90708486.js.map": "/olekspyl-goit-react-hw-03-image-finder/static/js/main.90708486.js.map"
   },
   "entrypoints": [
     "static/css/main.c9a09330.css",
-    "static/js/main.518b176a.js"
+    "static/js/main.90708486.js"
   ]
 }
