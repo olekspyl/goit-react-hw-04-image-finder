@@ -62,6 +62,7 @@ const controller = new AbortController();
     this.setState({
       query: query,
       page: 1,
+      error: false,
     });
   };
 
