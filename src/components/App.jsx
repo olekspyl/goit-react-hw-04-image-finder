@@ -26,7 +26,7 @@ export class App extends Component {
     if (
       prevState.query !== this.state.query || prevState.page !== this.state.page
     ) {
-      this.setState({ loading: true, pictures: [] });
+      this.setState({ loading: true});
       this.onFetch();
     }
   };
@@ -44,7 +44,9 @@ const controller = new AbortController();
             return;
           }
           this.setState(prevState => {
-            return { pictures: [...prevState.pictures, ...res.hits] };
+            return {
+              pictures: [...prevState.pictures, ...res.hits],
+            };
           });
       })
     } finally {
@@ -61,8 +63,9 @@ const controller = new AbortController();
 
     this.setState({
       query: query,
-      page: 1,
       error: false,
+      page: 1,
+      pictures: [],
     });
   };
 
