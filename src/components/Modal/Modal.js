@@ -9,7 +9,7 @@ import css from "./Modal.module.css"
 const modalRoot = document.querySelector('#modal-root');
 
 export default function Modal({currentPicture, onClose}) {
-
+// eslint-disable-next-line
     const onCloseModal = e => {
         if (e.code === "Escape") {
            onClose();
